@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--LINK CSS FILE -->
     <link rel="stylesheet" href="css\style.css">
-    <!-- LINK BOX ICONS-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- LINK FONTAWESOME ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VARGAS BSIT2B || Portfolio</title>
 </head>
 <body>
     <!--CREATING A NAVIGATION BAR -->
     <header class="header">
-    <a href="#" class="logo"><i class='bx bxs-user'></i><span>JMV</span></a>    
+    <a href="#" class="logo"><i class="fa-sharp fa-solid fa-graduation-cap"></i><span>JMV</span></a>    
     <i class='bx bx-menu' id="menu-btn"></i>
     <nav class="menu-bar">
         <a href="#" class="active">Home</a>
@@ -24,37 +24,71 @@
     </nav>
         <a href="signup.html" class="signup" target="_blank"><i class='bx bx-user-plus'></i>Sign Up</a>
     </header>
-    
+
+    <!--Home Section-->
     <section class="home">    
         <div class="home-me">
-            <h3>Hi, I'm</h3>
-            <h1>John Michael E. Vargas</h1>
-            <h3>Your Future <span>Software Engineer</span></h3>
-            <p>I'm a second-year BSIT student at Bicol University, with a passion for utilizing the latest technology to create innovative solutions and improve the world around me. I am driven to push the boundaries of what is possible, whether it's developing new software or designing more efficient systems</p>
-
+            <div class="home-me">
+                <h3>Hi, I'm</h3>
+                <h1>John Michael E. Vargas</h1>
+                <h3>Your Future </h3>
+                <h3><span id="typing-effect"></span></h3><br>
+              </div>
+              
             <a href="Memorizing for exam.docx" download>
                 <button class="btn">Download Resume</button>
               </a>   
             <div class="soc-med">
-                <a href="https://www.facebook.com/mchlvargas?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://twitter.com/mchlvargas?t=r7OQ4zmwyTgD50ii5UYUPA&s=07" target="_blank"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.instagram.com/vmichael28/?igshid=NmQ2ZmYxZjA=" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.tiktok.com/@michaelv28"target="_blank"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://www.facebook.com/mchlvargas?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/mchlvargas?t=r7OQ4zmwyTgD50ii5UYUPA&s=07" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/vmichael28/?igshid=NmQ2ZmYxZjA=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@michaelv28"target="_blank"><i class="fa-brands fa-tiktok"></i></i></a>
             </div>
         </div>
     <!--Profile Picture-->
-    <!--<div class="profile-pic">
-        <img src="img\00654737-modified.png" alt="JMV"  >   
-    </div> -->
+    <div class="profile-pic">
+        <img src="img\profile-pic.png" alt="JMV"  >   
+    </div> 
         </div>
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="about-section">
-            <h2 class="allheading">About<span> Us</span></h2>
-            <h3>Software Engineer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti maxime mollitia, reprehenderit quaerat ullam ipsam nulla at quisquam saepe voluptas exercitationem minima facere. Explicabo amet veniam commodi quibusdam fugit consectetur?</p>    
+
+    <!--About Section-->
+    <section id="about">
+        <h1  class="sub-heading">About Me</h1>
+        <p>I'm a second-year BSIT student at Bicol University, with a passion for utilizing the latest technology to create innovative solutions and improve the world around me. I am driven to push the boundaries of what is possible, whether it's developing new software or designing more efficient systems</p> 
+
+        <div class="about-col">
+            <div class="img-col"> 
+                <img src="img/mike.pn" alt="">
+            </div>
+            <div class="info">
+                <h2>BSIT STUDENT</h2>
+                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas iste, laudantium placeat veritatis molestiae dolores cum voluptatum voluptatem dignissimos, beatae, molestias delectus nobis id nulla perspiciatis similique dolorem ipsum aut!</P>
+                <div class="icon-list-col">
+                    <!--Left List-->
+                    <div class="icon-list">
+                        <ul>
+                            <li><i class="fa-solid fa-angle-left"></i> <strong>Age: </strong><span>19</span></li>
+                            <li><i class="fa-solid fa-angle-left"></i> <strong>Website: </strong><span>www.example.com</span></li>
+                            <li><i class="fa-solid fa-angle-left"></i> <strong>Phone: </strong><span>09452157859</span></li>
+                            <li><i class="fa-solid fa-angle-left"></i> <strong>City: </strong><span>Legazpi City</span></li>
+                        </ul>
+                    </div>
+
+                          <!--Right List-->
+                          <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Birthday: </strong><span>19</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Email: </strong><span>vmvichael23@gmail.com</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Address: </strong><span>Cruzada Legazpi City</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Work: </strong><span>Student</span></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
 
         </div>
 
