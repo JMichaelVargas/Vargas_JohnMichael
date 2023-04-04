@@ -21,8 +21,6 @@ html{
 }
 
 body{
-    background: url('peak_background.svg');
-    background-attachment: fixed;
     color: #fff;
 }
 .header{
@@ -53,6 +51,10 @@ body{
     font-size: 2.2rem;
     font-weight: 600;
 }
+.logo span:hover {
+  color: lightseagreen;
+}
+
 
 .menu-bar {
   display: flex;
@@ -90,26 +92,33 @@ body{
     display: none;
 }
 
-a.signup {
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 200;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-}
-a.signup:hover {
-    background-color: lightseagreen;
-    color: black;
-    transform: translateY(-5px);
+.auth-buttons a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 200;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
 }
 
-a.signup i{
-    color: white;
-    font-size: 2.2rem;
-    margin-right: 3px; 
-
+.auth-buttons a:hover {
+  background-color: lightseagreen;
+  color: black;
+  transform: translateY(-5px);
 }
+
+.auth-buttons a i {
+  color: white;
+  font-size: 2.2rem;
+  margin-right: 3px;
+}
+
+.auth-buttons .signup, .login {
+  background-color: black;
+}
+
+
 
 .section{
     padding: 10rem 10%;
@@ -117,6 +126,8 @@ a.signup i{
 }
 
 .home{
+    background: url('peak_background.svg');
+    background-attachment: fixed;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -125,6 +136,7 @@ a.signup i{
 }
 .home-me{
     max-width: 500px;
+    position: relative;
 }
 
 .home-me h3{
@@ -132,6 +144,7 @@ a.signup i{
     font-weight: 700;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .home-me h1{
     font-size: 40px;
@@ -145,6 +158,7 @@ span {
   color: lightseagreen;
 }
 
+
 #typing-effect {
   display: inline-block;
   overflow: hidden;
@@ -154,7 +168,6 @@ span {
   text-shadow: 0 0 10px lightseagreen;
 }
 
-
 @keyframes typing {
   from {
     width: 0;
@@ -163,7 +176,6 @@ span {
     width: 100%;
   }
 }
-
   
 .home-me .btn{
     display: inline-block;
@@ -242,24 +254,33 @@ span {
     }
   }
 
+  .about{
+    background: rgb(3, 17, 38);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
   #about{
     padding: 70px 30px;
-
   }
-
+  
   .sub-heading{
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
+    margin-top: 5px; /* adjust this value to change the spacing */
     text-align: center;
   }
 
+  
   .divider{
     width: 80px;
     height: 4px;
     background-color: var(--themeColor);
     border-radius: 3px;
   }
+  
   #about p{
     color: var(--themeColor);
     font-size: 15px;
@@ -268,29 +289,29 @@ span {
     margin-top: 15px;
     text-align: center;
   }
-
+  
   #about .about-col{
     display: flex;
     gap: 20px;
     margin-top: 25px;
+    align-items: center; /* add this line */
   }
-  
   
   #about .about-col .img-col{
     flex-basis: 35%;
     text-align: center;
- 
   }
-
+  
   #about .about-col .img-col img{
-    width: 100%;
+    width: 390px;
+    border-radius: 50px;
   }
-
+  
+  
   #about .about-col .info{
     flex-basis: 70%;
-
   }
-
+  
   #about .about-col .info h2{
     color: lightseagreen;
     font-weight: 700;
@@ -298,34 +319,34 @@ span {
     letter-spacing: 0.5px;
     margin-top: -10px;
   }
-
+  
   #about .about-col .info p{
     color: white;
     font-size: 15px;
     letter-spacing: 0.5px;
-    margin-top: -10px;
+    margin-top: -5px;
     font-style: italic;
   }
-
+  
   #about .about-col .info .icon-list-col{
     display: flex;
     margin-top: 20px;
     gap: 40px;
   }
-
+  
   #about .about-col .info .icon-list-col .icon-list ul li{
     list-style: none;
     margin: 15px; 
   }
-
   
   #about .about-col .info .icon-list-col .icon-list ul li strong{
     font-weight: 600px;
     margin-right: 2px;
   }
-
   
   #about .about-col .info .icon-list-col .icon-list ul li span{
     font-weight: 500px;
     margin-right: 14px;
+    font-size: 16px;
   }
+  

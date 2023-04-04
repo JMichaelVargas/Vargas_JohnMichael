@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css\style.css">
     <!-- LINK FONTAWESOME ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>VARGAS BSIT2B || Portfolio</title>
+    <title>VARGAS || Portfolio</title>
 </head>
 <body>
     <!--CREATING A NAVIGATION BAR -->
@@ -16,17 +16,20 @@
     <a href="#" class="logo"><i class="fa-sharp fa-solid fa-graduation-cap"></i><span>JMV</span></a>    
     <i class='bx bx-menu' id="menu-btn"></i>
     <nav class="menu-bar">
-        <a href="#" class="active">Home</a>
-        <a href="#">About</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
         <a href="#">Services</a>
         <a href="#">Portfolio</a>
         <a href="#">Contact Me</a>
     </nav>
+    <div class="auth-buttons">
         <a href="signup.html" class="signup" target="_blank"><i class='bx bx-user-plus'></i>Sign Up</a>
+        <a href="login.html" class="login" target="_blank"><i class='bx bx-log-in'></i>Log In</a>
+    </div>  
     </header>
 
     <!--Home Section-->
-    <section class="home">    
+    <section class="home" id="home">    
         <div class="home-me">
             <div class="home-me">
                 <h3>Hi, I'm</h3>
@@ -55,43 +58,44 @@
 
 
     <!--About Section-->
-    <section id="about">
-        <h1  class="sub-heading">About Me</h1>
-        <p>I'm a second-year BSIT student at Bicol University, with a passion for utilizing the latest technology to create innovative solutions and improve the world around me. I am driven to push the boundaries of what is possible, whether it's developing new software or designing more efficient systems</p> 
-
+    <section class="about section" id="about">
+        <h1  class="sub-heading">About <span>Me</span></h1>
         <div class="about-col">
             <div class="img-col"> 
-                <img src="img/mike.pn" alt="">
+                <img src="img/mike2.jpg" alt="">
             </div>
             <div class="info">
-                <h2>BSIT STUDENT</h2>
-                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas iste, laudantium placeat veritatis molestiae dolores cum voluptatum voluptatem dignissimos, beatae, molestias delectus nobis id nulla perspiciatis similique dolorem ipsum aut!</P>
+                <h2>BSIT - STUDENT</h2>
+                <p>I'm a second-year BSIT student at Bicol University, with a passion for utilizing the latest technology to create innovative solutions and improve the world around me. I am driven to push the boundaries of what is possible, whether it's developing new software or designing more efficient systems</p> 
                 <div class="icon-list-col">
                     <!--Left List-->
                     <div class="icon-list">
                         <ul>
-                            <li><i class="fa-solid fa-angle-left"></i> <strong>Age: </strong><span>19</span></li>
-                            <li><i class="fa-solid fa-angle-left"></i> <strong>Website: </strong><span>www.example.com</span></li>
-                            <li><i class="fa-solid fa-angle-left"></i> <strong>Phone: </strong><span>09452157859</span></li>
-                            <li><i class="fa-solid fa-angle-left"></i> <strong>City: </strong><span>Legazpi City</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i> <strong>Age: </strong><span>19 years Old</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i> <strong>Website: </strong><span>www.example.com</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i> <strong>Phone: </strong><span>09452157859</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i> <strong>City: </strong><span>Legazpi City</span></li>
                         </ul>
                     </div>
 
                           <!--Right List-->
                           <div class="icon-list">
                             <ul>
-                                <li><i class="fa-solid fa-angle-right"></i> <strong>Birthday: </strong><span>19</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Birthday: </strong><span>May 28, 2002</span></li>
                                 <li><i class="fa-solid fa-angle-right"></i> <strong>Email: </strong><span>vmvichael23@gmail.com</span></li>
-                                <li><i class="fa-solid fa-angle-right"></i> <strong>Address: </strong><span>Cruzada Legazpi City</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Address: </strong><span># 1039 Puro 7 Cruzada, Legazpi City</span></li>
                                 <li><i class="fa-solid fa-angle-right"></i> <strong>Work: </strong><span>Student</span></li>
                             </ul>
                         </div>
                 </div>
             </div>
         </div>
-
         </div>
+    </section>
 
+    <!--Services Section-->
+    <section class="service">
+        
     </section>
     <script src="js\main.js"></script>
 
