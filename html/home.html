@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--LINK CSS FILE -->
-    <link rel="stylesheet" href="css\style.css">
-    <!-- LINK FONTAWESOME ICONS-->
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>VARGAS || Portfolio</title>
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <!--CREATING A NAVIGATION BAR -->
-    <header class="header">
-    <a href="#" class="logo"><i class="fa-sharp fa-solid fa-graduation-cap"></i><span>JMV</span></a>    
-    <i class='bx bx-menu' id="menu-btn"></i>
-    <nav class="menu-bar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact Me</a>
-    </nav>
-    <div class="auth-buttons">
-        <a href="signup.html" class="signup" target="_blank"><i class='bx bx-user-plus'></i>Sign Up</a>
-        <a href="login.html" class="login" target="_blank"><i class='bx bx-log-in'></i>Log In</a>
-    </div>  
-    </header>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <i class="fa-sharp fa-solid fa-graduation-cap"></i>JMV</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li> 
+            </ul>
+              <button class="btn btn-outline-success" type="submit">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+</header>
 
     <!--Home Section-->
     <section class="home" id="home">    
@@ -49,9 +62,9 @@
             </div>
         </div>
     <!--Profile Picture-->
-    <div class="profile-pic">
+    <!--<div class="profile-pic">
         <img src="img\profile-pic.png" alt="JMV"  >   
-    </div> 
+    </div> --> 
         </div>
         </div>
     </section>
@@ -91,12 +104,33 @@
             </div>
         </div>
         </div>
+        
+        <header class="title">
+          <h2>EDUCATION</h2>
+      </header>
+
+      <div class="contents">
+          <div class="box">
+              <h4>2021-Present</h4>
+              <h3>Bicol Univerisity College of Science</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea sint possimus debitis deleniti quae cumque, magnam expedita similique dolorum earum minus, voluptas doloremque non! Voluptatibus itaque fuga recusandae aperiam. Ullam?</p>
+          </div>
+          <div class="box">
+              <h4>2019-2021</h4>
+              <h3>DWCL SHS</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea sint possimus debitis deleniti quae cumque, magnam expedita similique dolorum earum minus, voluptas doloremque non! Voluptatibus itaque fuga recusandae aperiam. Ullam?</p>
+          </div>
+      </div>
+
+      
     </section>
 
     <!--Services Section-->
     <section class="service">
         
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script> 
     <script src="js\main.js"></script>
 
 </body>

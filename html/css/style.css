@@ -10,115 +10,101 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-a{
-    color: #fff;
-}
-
-html{
-    font-size: 80.5%;
-    overflow-x: hidden;
-
-}
-
 body{
-    color: #fff;
+  color: white  ;
 }
-.header{
-
+.navbar{
+    padding: 1rem 3rem;
+    height: 0rem;
+    min-height: 8vh;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 1rem 6%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    right: 0;
     z-index: 1;
-    background: black;
-}
-.logo{
-    display: flex;
-    align-items: center;
-}
-.logo i{
-    color: lightseagreen;
-    font-size: 2.2rem;
-    margin-right: 3px; 
-
-}   
-.logo span{
-    color: white;
-    font-size: 2.2rem;
-    font-weight: 600;
-}
-.logo span:hover {
-  color: lightseagreen;
-}
-
-
-.menu-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: rgb(3, 17, 38);;
   
 }
 
-.menu-bar a:hover, .menu-bar a.active{
-  color:lightseagreen;
-}
+.navbar .navbar-brand a {
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+  }
 
-.menu-bar a{
-  color: whitesmoke;
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin-left: 1.5rem;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-}
-.menu-bar a.active {
+  .navbar-brand i{
+    color: lightseagreen;
+    margin-right: 3px; 
+  }
+  
+  .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    color: white; 
+  }
+
+  .navbar-brand:hover {
+    color: lightseagreen; 
+  }
+
+  .navbar-nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .navbar-nav li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 15 px;
+  }
+  
+  .navbar-nav li a:hover {
+    background-color: #fff;
+    color: lightseagreen;
+  }
+
+  .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border-color: lightseagreen;
+    border-radius: 25px;
+    padding: 8px 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
     background-color: lightseagreen;
-    text-align: center;
-    color: whitesmoke;
+    color: #fff;
+  }
+  
+  .btn:focus,
+  .btn:active {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .section{
+    padding: 10rem 10%;
+    min-width: 100vi;
 }
-
-.menu-bar a:hover {
-  background-color: lightseagreen;
-  color: black;
-  transform: translateY(-5px);
-}
-
-#menu-btn{
-    font-size: 3rem;
-    display: none;
-}
-
-.auth-buttons a {
-  color: whitesmoke;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 200;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 10px;
-}
-
-.auth-buttons a:hover {
-  background-color: lightseagreen;
-  color: black;
-  transform: translateY(-5px);
-}
-
-.auth-buttons a i {
-  color: white;
-  font-size: 2.2rem;
-  margin-right: 3px;
-}
-
-.auth-buttons .signup, .login {
-  background-color: black;
-}
-
-
 
 .section{
     padding: 10rem 10%;
@@ -126,136 +112,125 @@ body{
 }
 
 .home{
-    background: url('peak_background.svg');
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 10vh 10% 0;
+  background: url('peak_background.svg');
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 10vh 10% 0;
 }
+
 .home-me{
-    max-width: 500px;
-    position: relative;
+max-width: 500px;
+position: relative;
 }
 
 .home-me h3{
-    font-size: 30px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    position: relative;
+font-size: 30px;
+font-weight: 700;
+display: flex;
+align-items: center;
+position: relative;
 }
 .home-me h1{
-    font-size: 40px;
-    font-weight: 700;
+font-size: 40px;
+font-weight: 700;
 }
+
 .home-me p{
-    font-size: 18px;
-    margin: 20px 0 40px;
+font-size: 18px;
+margin: 20px 0 40px;
 }
 span {
-  color: lightseagreen;
+color: lightseagreen;
 }
 
+/* Floating animation keyframes */
+@keyframes float {
+0% {
+  transform: translatey(0px);
+}
+50% {
+  transform: translatey(-10px);
+}
+100% {
+  transform: translatey(0px);
+}
+}
 
 #typing-effect {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 40px;
-  animation: typing 3s steps(20, end) infinite;
-  text-shadow: 0 0 10px lightseagreen;
+display: inline-block;
+overflow: hidden;
+white-space: nowrap;
+font-size: 40px;
+animation: typing 3s steps(20, end) infinite;
+text-shadow: 0 0 10px lightseagreen;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+from {
+  width: 0;
 }
-  
-.home-me .btn{
-    display: inline-block;
-    font-size: 1.2rem;
-    padding: 1rem 2.2rem;
-    border-radius: 50px;
-    color: white;
-    background: lightseagreen;
-    font-weight: 600;
-    justify-content: center;
-    text-decoration: none;
-  }
-  
-  .btn:hover{
-    background: rgb(3, 17, 38);
-    color: lightseagreen;
-    border: 1px solid lightseagreen;
-  }
+to {
+  width: 100%;
+}
+}
 
-  .profile-pic {
-    width: 100%;
-    max-width: 10vw;
-    position: absolute;
-    top: 100px; /* adjust this value to position the image vertically */
-    right: 210px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: float 3s ease-in-out infinite;
-    animation-play-state: paused;
-  }
-  
-  /* Floating animation keyframes */
-  @keyframes float {
-    0% {
-      transform: translatey(0px);
-    }
-    50% {
-      transform: translatey(-10px);
-    }
-    100% {
-      transform: translatey(0px);
-    }
-  }
- 
+.home-me .btn{
+display: inline-block;
+font-size: 14px; /* Increase the font size */
+padding: 0.3rem 1rem; /* Increase the padding */
+border-radius: 50px;
+color: white;
+background: lightseagreen;
+font-weight: 600;
+justify-content: center;
+text-decoration: none;
+}
+
+.btn:hover{
+  background: rgb(3, 17, 38);
+  color: lightseagreen;
+  border: 1px solid lightseagreen;
+}
+
 .soc-med a {
-    display: inline-flex;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    font-size: 2rem;
-    margin: 3rem 0.5rem 3rem; /* decrease left and right margin */
-    border: 2px solid lightseagreen;
-    color: lightseagreen;
-    position: relative;
-    transition: all 0.3s ease-out;
-    background: transparent;
-    justify-content: center;  
-    align-items: center;
-    text-decoration: none;
-  }
-  .soc-med a:hover {
-    transform: translateY(-10px);
-    animation: float 2s ease-in-out infinite;
-    box-shadow: 0 0 10px lightseagreen, 0 0 20px lightseagreen, 0 0 30px lightseagreen; /* add glow effect on hover */
-  }
-  
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 20px;
+  margin: 3rem 0.5rem 3rem; /* decrease left and right margin */
+  border: 2px solid lightseagreen;
+  color: lightseagreen;
+  position: relative;
+  transition: all 0.3s ease-out;
+  background: transparent;
+  justify-content: center;  
+  align-items: center;
+  text-decoration: none;
+}
+.soc-med a:hover {
+  transform: translateY(-10px);
+  animation: float 2s ease-in-out infinite;
+  box-shadow: 0 0 10px lightseagreen, 0 0 20px lightseagreen, 0 0 30px lightseagreen; /* add glow effect on hover */
+}
+
+@keyframes float {
+0% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-10px);
+}
+100% {
+  transform: translateY(0);
+}
+}
 
   .about{
-    background: rgb(3, 17, 38);
+    background: linear-gradient(to bottom, darkblue, black, rgb(3, 17, 38));
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -349,4 +324,3 @@ span {
     margin-right: 14px;
     font-size: 16px;
   }
-  
