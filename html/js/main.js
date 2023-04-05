@@ -1,15 +1,13 @@
-const span = document.getElementById('typing-effect');
-const text = "Software Engineer";
+const jobTitle = document.querySelector('.job');
 
-let index = 0;
+// trigger the typing effect on page load
+window.onload = function() {
+  jobTitle.classList.add('typing');
+};
 
-function type() {
-  if (index < text.length) {
-    span.innerHTML += text.charAt(index);
-    index++;
-    setTimeout(type, 100);
-  }
-}
-
-setTimeout(type, 1000);
+// trigger the typing effect on button click
+const button = document.querySelector('button');
+button.addEventListener('click', function() {
+  jobTitle.classList.add('typing');
+});
 
