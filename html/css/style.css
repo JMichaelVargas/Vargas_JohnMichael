@@ -304,12 +304,20 @@ body{
   #about .about-col .info .icon-list-col .icon-list ul li strong{
     font-weight: 600px;
     margin-right: 2px;
+    color: lightseagreen;
   }
   
   #about .about-col .info .icon-list-col .icon-list ul li span{
     font-weight: 500px;
     margin-right: 14px;
     font-size: 16px;
+    color: #fff;
+  }
+
+  .resume{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem; /* adjust margin as needed */
   }
 
   .sub{
@@ -327,6 +335,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 100px 0;
+    background:#191C26;
   }
 
   .timeline {
