@@ -11,3 +11,11 @@ button.addEventListener('click', function() {
   jobTitle.classList.add('typing');
 });
 
+
+const section = document.querySelector('#about-section');
+
+fetch('about.html')
+  .then(response => response.text())
+  .then(data => {
+    section.innerHTML = data;
+  });
