@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-root{
-    --primary: #ED3833;
-    --secondary: #191C26;
-    --roboto:'Roboto', sans-serif;
-}
 
 body{
     background-color: var(--secondary);
@@ -16,7 +11,7 @@ body{
     background: rgb(3, 17, 38);
     padding: 1rem 3rem;
     height: 0rem;
-    min-height: 7vh;
+    min-height: 9vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -69,10 +64,20 @@ body{
     background-color: #fff;
     color: lightseagreen;
   }
-  
+
   .navbar-collapse {
     background: rgb(3, 17, 38);
+    font-size: 1.2rem;
+    position: relative;
+    border-radius: 10px;
   }
+
+  .navbar-toggler-icon {
+    background-color: lightseagreen;
+    cursor: pointer;
+    
+  }
+  
   
   .btn {
     font-family: 'Poppins', sans-serif;
@@ -106,7 +111,7 @@ body{
   .slider-image img {
     max-width: 100%;
     border-radius: 50%;
-    border: 10px solid #fff;
+    border: 10px solid lightseagreen;
     display: block;
     margin: 0 auto;
   }
@@ -128,6 +133,8 @@ body{
     }
   }
 
+  
+
 .name{
     font-size: 40px;
     color: var(--primary);
@@ -141,10 +148,10 @@ body{
   font-family: var(--roboto);
   text-align: center;
   color: lightseagreen;
-  overflow: hidden; /* hide the overflowing text */
-  white-space: nowrap; /* prevent text from wrapping */
-  border-right: 0.15em solid lightblue; /* create a blinking cursor effect */
-  animation: typing 3s steps(40, end) infinite; /* animate the typing effect indefinitely */
+  overflow: hidden; 
+  white-space: nowrap; 
+  border-right: 0.15em solid lightblue; 
+  animation: typing 3s steps(40, end) infinite; 
 }
 
 @keyframes typing {
