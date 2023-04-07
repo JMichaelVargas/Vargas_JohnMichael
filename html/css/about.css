@@ -106,7 +106,8 @@ body{
     opacity: 0.5;
     cursor: not-allowed;
   }
-  about{
+  
+  .about{
     background: linear-gradient(to bottom, darkblue, black, rgb(3, 17, 38));
     background-repeat: no-repeat;
     background-size: cover;
