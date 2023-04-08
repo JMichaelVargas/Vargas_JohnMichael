@@ -9,7 +9,7 @@ body{
 
 .navbar{
     background: rgb(3, 17, 38);
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     height: 0rem;
     min-height: 9vh;
     position: fixed;
