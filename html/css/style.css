@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body{
-    background-color: var(--secondary);
     height: 100vh;
     overflow-x: hidden;
 }
@@ -25,6 +24,10 @@ body{
     text-decoration: none;
   }
 
+  .navbar .navbar-brand {
+    font-size: 23px;
+  }
+
   .navbar-brand i{
     color: lightseagreen;
     margin-right: 3px; 
@@ -32,7 +35,7 @@ body{
   
   .navbar-brand {
     font-family: 'Pacifico', cursive;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
     color: white; 
   }
@@ -64,20 +67,6 @@ body{
     background-color: #fff;
     color: lightseagreen;
   }
-
-  .navbar-collapse {
-    background: rgb(3, 17, 38);
-    font-size: 1.2rem;
-    position: relative;
-    border-radius: 10px;
-  }
-
-  .navbar-toggler-icon {
-    background-color: lightseagreen;
-    cursor: pointer;
-    
-  }
-  
   
   .btn {
     font-family: 'Poppins', sans-serif;
@@ -108,6 +97,9 @@ body{
     cursor: not-allowed;
   }
 
+
+
+  /*Home Section */
   .slider-image img {
     max-width: 100%;
     border-radius: 50%;
@@ -180,7 +172,7 @@ body{
     .job{
         font-size: 40px !important ;
     }
-    .location{
+    .future{
         font-size: 30px !important;
     }
 }
