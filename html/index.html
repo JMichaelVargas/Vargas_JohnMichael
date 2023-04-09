@@ -19,14 +19,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
   <body>
-    
     <!-- navbar section-->
-    <nav class="navbar navbar-expand-lg navbar-blue ">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-blue ">
         <div class="container-fluid px-0 overflow-hidden">
           <a class="navbar-brand no gutters" href="#"> <i class="fa-sharp fa-solid fa-graduation-cap"></i>JMV</a>
-          <button class="navbar-toggler no-gutter" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+
             </svg>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,6 +52,7 @@
           </div>
         </div>
       </nav>
+      
     <!-- Home section-->
     <div class="row slider" id="home">
         <div class="col-10 mx-auto"> 
