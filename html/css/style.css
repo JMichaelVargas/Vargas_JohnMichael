@@ -224,11 +224,22 @@ html,body{
     align-items: center;
   }
 
+
+
   @media screen and (max-width: 767px) {
     .slider-image img {
       max-width: 90%;
       border-width: 5px;
       margin-top: 5px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 850px){
+    .slider-image img {
+      max-width: 50%;
+      border-width: 5px;
+      margin-top: 40px;  
       margin-bottom: 30px;
     }
   }
@@ -283,6 +294,19 @@ html,body{
     .future{
         font-size: 30px !important;
     }
+}
+
+@media only screen and (max-width: 850px){
+  .name{
+    font-size: 26px !important ;
+    font-weight: 400;
+  }
+  .job{
+      font-size: 36px !important ;
+  }
+  .future{
+      font-size: 30px !important;
+  }
 }
 
 .social-media {
