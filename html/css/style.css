@@ -206,11 +206,22 @@ html,body{
     border: none;
 }
 
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0)
+}
+
   /*Home Section */
   .slider-image img {
     max-width: 100%;
     border-radius: 50%;
-    border: 10px solid lightseagreen;
     display: block;
     margin: 0 auto;
   }
@@ -235,9 +246,9 @@ html,body{
     }
   }
 
-  @media only screen and (max-width: 850px){
+  @media (max-width: 850px){
     .slider-image img {
-      max-width: 50%;
+      max-width: 65%;
       border-width: 5px;
       margin-top: 40px;  
       margin-bottom: 30px;
@@ -298,11 +309,11 @@ html,body{
 
 @media only screen and (max-width: 850px){
   .name{
-    font-size: 26px !important ;
+    font-size: 22px !important ;
     font-weight: 400;
   }
   .job{
-      font-size: 36px !important ;
+      font-size: 34px !important ;
   }
   .future{
       font-size: 30px !important;
