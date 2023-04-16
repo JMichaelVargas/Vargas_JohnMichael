@@ -20,7 +20,6 @@ fetch('about.html')
     section.innerHTML = data;
   });
 
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)

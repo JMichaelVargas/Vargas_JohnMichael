@@ -21,12 +21,13 @@ body {
 .navbar {
   background: #030214;
   min-height: 8vh;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  position: fixed;
+  box-sizing: border-box;
 }
 
 .navbar .nav-link {
@@ -225,7 +226,13 @@ body {
   transform: translateX(0)
 }
 
-/*Home Section */
+@media(min-width: 576px) {
+  body {
+      font-size: 1.6rem;
+  }
+}
+
+/* HOME SECTION */
 .slider-image img {
   max-width: 100%;
   border-radius: 50%;
@@ -345,7 +352,6 @@ body {
   border-radius: 50%;
   font-size: 20px;
   margin: 3rem 0.5rem 3rem;
-  /* decrease left and right margin */
   border: 2px solid lightseagreen;
   color: lightseagreen;
   transition: all 0.3s ease-out;
@@ -359,7 +365,6 @@ body {
   transform: translateY(-10px);
   animation: float 2s ease-in-out infinite;
   box-shadow: 0 0 10px lightseagreen, 0 0 20px lightseagreen, 0 0 30px lightseagreen;
-  /* add glow effect on hover */
 }
 
 @keyframes float {
@@ -375,7 +380,9 @@ body {
     transform: translateY(0);
   }
 }
+/* END HOME SECTION */
 
+/* BOX SECTION  */
 .boxes{
   margin-bottom: 11.3rem;
 }
@@ -403,6 +410,7 @@ body {
    font-size: 1,5rem;
    margin-bottom: 1.8rem;
    color: #fff;
+   font-family: 'Pacifico', cursive;
 }
 
 .boxes .container .content .box p{
