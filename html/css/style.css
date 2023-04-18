@@ -94,7 +94,7 @@ body {
   z-index: 1100;
 }
 
-/*Responsive Mobile View button*/
+/*Responsive Mobile View Button for Navbar*/
 
 .navbar .navbar-toggler {
 
@@ -226,12 +226,6 @@ body {
   transform: translateX(0)
 }
 
-@media(min-width: 576px) {
-  body {
-      font-size: 1.6rem;
-  }
-}
-
 /* HOME SECTION */
 .slider-image img {
   max-width: 100%;
@@ -247,26 +241,6 @@ body {
   height: 105vh;
   display: flex;
   align-items: center;
-}
-
-
-
-@media screen and (max-width: 767px) {
-  .slider-image img {
-    max-width: 90%;
-    border-width: 5px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 850px) {
-  .slider-image img {
-    max-width: 65%;
-    border-width: 5px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
 }
 
 .name {
@@ -303,40 +277,9 @@ body {
   text-align: center;
 }
 
-
 .description {
   color: white;
   text-align: center;
-}
-
-@media(max-width:767px) {
-  .name {
-    font-size: 22px !important;
-    font-weight: 400;
-  }
-
-  .job {
-    font-size: 34px !important;
-  }
-
-  .future {
-    font-size: 30px !important;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .name {
-    font-size: 22px !important;
-    font-weight: 400;
-  }
-
-  .job {
-    font-size: 34px !important;
-  }
-
-  .future {
-    font-size: 30px !important;
-  }
 }
 
 .social-media {
@@ -423,6 +366,60 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+/* RESPONSIVE SECTION */
+@media(min-width: 576px) {
+  body {
+      font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider-image img {
+    max-width: 90%;
+    border-width: 5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .slider-image img {
+    max-width: 65%;
+    border-width: 5px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width:767px) {
+  .name {
+    font-size: 22px !important;
+    font-weight: 400;
+  }
+
+  .job {
+    font-size: 34px !important;
+  }
+
+  .future {
+    font-size: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .name {
+    font-size: 22px !important;
+    font-weight: 400;
+  }
+
+  .job {
+    font-size: 34px !important;
+  }
+
+  .future {
+    font-size: 30px !important;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .boxes .container .content{

@@ -90,13 +90,6 @@ body {
 }
 
 /*About Section*/
-.about {
-  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 #about {
   padding: 70px 30px;
 }
@@ -111,14 +104,6 @@ body {
 
 span {
   color: lightseagreen;
-}
-
-
-.divider {
-  width: 80px;
-  height: 4px;
-  background-color: var(--themeColor);
-  border-radius: 3px;
 }
 
 #about p {
@@ -145,11 +130,12 @@ span {
 #about .about-col .img-col img {
   width: 350px;
   border-radius: 50px;
+  margin-bottom: 35rem;
 }
-
 
 #about .about-col .info {
   flex-basis: 70%;
+  margin-bottom: 6rem;
 }
 
 #about .about-col .info h2 {
@@ -220,6 +206,7 @@ span {
 
   #about .about-col .img-col img {
     width: 40%;
+    margin-bottom: 0;
   }
 
   #about .about-col .info h2 {
@@ -314,180 +301,101 @@ span {
   transform: translateX(0)
 }
 
-/* RESUME SECTION */
-
-.resume {
-  margin-bottom: 10rem;
+/* TAB SECTION */
+button{
+  user-select: none;
 }
-
-.resume .container .resume-container {
-  margin-top: 6.5rem;
-
+.about-tabs{
+  margin-top: 20px;
 }
-
-.resume .container .resume-container .resume-left {
-  margin-bottom: 7rem;
-}
-
-
-.resume .container .resume-container .title {
-  margin-bottom: 6rem;
-  text-align: center;
-  color: white;
-}
-
-.resume .container .resume-container .title h3 {
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-}
-
-.resume .container .resume-container .resume-list ul {
-  position: relative;
-}
-
-.resume .container .resume-container .resume-list ul::before {
-  content: "";
-  position: absolute;
-  top: 1rem;
-  bottom: 5rem;
-  left: 5em;
-  width: .1rem;
-  background-color: white;
-}
-
-
-.resume .container .resume-container .resume-list ul li {
-  margin-bottom: 5rem;
-}
-
-.resume .resume-container .resume-list ul li .list-inner {
-  width: 100%;
-  height: auto;
-  position: relative;
-  padding-left: 9.5rem;
-}
-
-.resume .resume-container .resume-list ul li .list-inner .icon {
+.about-tabs .tab-items{
+  padding: 2px 0;
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
   display: inline-block;
-  width: 5.5rem;
-  height: 5.5rem;
-  border-radius: 50%;
-  background-color: rgb(3, 17, 38);
+  color: darkcyan;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0 30px 0 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.about-tabs .tab-items:last-child{
+  margin: 0;
+}
+.about-tabs .tab-items::before{
+  content: '';
   position: absolute;
   left: 0;
-  top: 0;
-  z-index: 1;
+  bottom: 0;
+  width: 0%;
+  background-color: white;
+  height: 1px;
+  transition: width 0.3s ease;
 }
-
-.resume .resume-container .resume-list ul li .list-inner .icon i {
-  color: lightseagreen;
+.about-tabs .tab-items:hover::before{
+  width: 100%;
+}
+.about-tabs .tab-items.active::before{
+  width: 100%;
+  background-color: white;
+}
+.about-tabs .tab-items.active{
+  color: darkcyan;
+  opacity: 1;
+  cursor: auto;
+}
+.info .tab-content{
+  padding: 40px 0;
+  display: none;
+}
+.info .tab-content.active{
+  display: block;
+}
+.info .timeline-item{
+  margin-bottom: 30px;
+  position: relative;
+  padding: 10px 0 0 40px;
+}
+.info .timeline-item::before{
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
+  height: 11px;
+  width: 11px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
 }
-
-.resume .resume-container .resume-list ul li .list-inner .resume-title {
-  margin-bottom: 1.8rem;
+.info .timeline{
+  position: relative;
 }
-
-.resume .resume-container .resume-list ul li .list-inner .resume-title h3 {
-  font-size: 2.2rem;
-  margin-bottom: 1.3rem;
+.info .timeline::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 5px;
+  background-color: lightseagreen;
+}
+.info .timeline-item:last-child{
+  margin-bottom: 0;
+}
+.info .timeline-item .date{
+  display: block;
   color: white;
+  font-weight: 400;
+  margin: 0 0 10px;
 }
-
-.resume .resume-container .resume-list ul li .list-inner .resume-title h3 span {
-  font-size: 1.6rem;
-  color: white;
-  font-weight: 600;
-  display: inline-block;
-  padding-left: .8rem;
-}
-
-.resume-list p {
-  color: white;
-}
-
-
-.resume .resume-container .resume-list ul li .list-inner .resume-title .company {
-  font-size: 1.8rem;
-  color: white;
-  font-weight: 600;
+.info .timeline-item h4{
+  font-size: 18px;
   text-transform: capitalize;
+  margin:0 0 10px;
+  color: white;
 }
-@media only screen and (max-width: 768px) {
-  .resume .container .resume-container .resume-list ul::before {
-    left: 2em;
-    bottom: 5rem;
-  }
-
-  .resume .container .resume-container .resume-list ul li .list-inner {
-    padding-left: 7.5rem;
-  }
-
-  .resume .resume-container .resume-list ul li .list-inner .icon {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .resume .resume-container .resume-list ul li .list-inner .icon i {
-    font-size: 1.5rem;
-  }
-
-  .resume .resume-container .resume-list ul li .list-inner .resume-title h3 {
-    font-size: 1.8rem;
-  }
-
-  .resume .container .resume-container {
-    margin-top: 3rem;
-    }
-    
-    .resume .container .resume-container .title {
-    margin-bottom: 4rem;
-    }
-    
-    .resume .container .resume-container .title h3 {
-    font-size: 2.5rem;
-    }
-    
-    .resume .container .resume-container .resume-list ul::before {
-    top: 1rem;
-    bottom: 5rem;
-    left: 3rem;
-    width: .1rem;
-    }
-    
-    .resume .resume-container .resume-list ul li .list-inner {
-    padding-left: 6rem;
-    }
-    
-    .resume .resume-container .resume-list ul li .list-inner .icon {
-    width: 4rem;
-    height: 4rem;
-    }
-    
-    .resume .resume-container .resume-list ul li .list-inner .icon i {
-    font-size: 1.5rem;
-    }
-    
-    .resume .resume-container .resume-list ul li .list-inner .resume-title h3 {
-    font-size: 1.8rem;
-    }
-    
-    .resume .resume-container .resume-list ul li .list-inner .resume-title h3 span {
-    font-size: 1.2rem;
-    padding-left: .5rem;
-    }
-    
-    .resume-list p {
-    font-size: 1.2rem;
-    }
-    
-    .resume .resume-container .resume-list ul li .list-inner .resume-title .company {
-    font-size: 1.5rem;
-    }
-    }
-/*End Resume Section*/
+.info .timeline-item h4 span{
+  font-weight: 400;
+}

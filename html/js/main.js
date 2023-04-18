@@ -12,14 +12,16 @@ button.addEventListener('click', function() {
 });
 
 
-const section = document.querySelector('#about-section');
+function loadSection(sectionId, htmlFile) {
+  const section = document.querySelector(`#${sectionId}`);
+  fetch(htmlFile)
+    .then(response => response.text())
+    .then(data => {
+      section.innerHTML = data;
+    });
+}
 
-fetch('about.html')
-  .then(response => response.text())
-  .then(data => {
-    section.innerHTML = data;
-  });
-
+  // Hidden Section
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -32,3 +34,17 @@ fetch('about.html')
 });
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe (el));
+
+// About Section Education
+const tabsContainer = document.querySelector(".about-tabs"),
+aboutSection = document.querySelector(".about-section");
+
+tabsContainer.addEventListener("click", (e) =>{
+  if(e.target.classList.contains("tab-items") && !e.target.classList.contains("active")){
+    tabsContainer.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+    const target = e.target.getAttribute("data-target");
+    aboutSection.querySelector(".tab-content.active").classList.remove("active");
+    aboutSection.querySelector(target).classList.add("active");
+  }
+});
