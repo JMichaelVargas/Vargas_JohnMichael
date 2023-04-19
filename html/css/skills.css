@@ -26,7 +26,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  position: fixed;
+  position: sticky;
   box-sizing: border-box;
 }
 
