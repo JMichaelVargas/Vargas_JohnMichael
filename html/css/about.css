@@ -64,11 +64,11 @@ body {
 .navbar-nav li a {
   color: #fff;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 5px 10px;
   display: inline-block;
   border-radius: 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-size: 15 px;
+  transition: 0.3s ease, color 0.3s ease;
+  font-size: 15px;
 }
 
 .navbar-nav li a:hover {
