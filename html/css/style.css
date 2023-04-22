@@ -345,6 +345,7 @@ body {
   background-color: rgb(3, 17, 38);
   transition: 0.3s ease-in-out;
 }
+
 .boxes .container .content .box i{
   font-size: 2rem;
   color: lightseagreen;
@@ -365,6 +366,7 @@ body {
 
 .box:hover {
   transform: scale(1.1);
+  border: .2rem solid lightseagreen;
 }
 
 /* RESPONSIVE SECTION */
