@@ -26,13 +26,8 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-    
+  position: sticky; 
   box-sizing: border-box;
-}
-
-.navbar .nav-link {
-  font-size: 16px;
-  color: white;
 }
 
 .navbar .navbar-brand a {

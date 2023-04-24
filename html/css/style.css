@@ -30,11 +30,6 @@ body {
   box-sizing: border-box;
 }
 
-.navbar .nav-link {
-  font-size: 16px;
-  color: white;
-}
-
 .navbar .navbar-brand a {
   padding: 1rem 0;
   display: block;
