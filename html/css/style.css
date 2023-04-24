@@ -31,9 +31,7 @@ body {
 }
 
 .navbar .nav-link {
-  font-size: 18px;
-  margin-left: 30px;
-  position: relative;
+  font-size: 16px;
   color: white;
 }
 
@@ -79,7 +77,6 @@ body {
 }
 
 .navbar .navbar-toggler {
-
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
@@ -96,14 +93,12 @@ body {
 /*Responsive Mobile View Button for Navbar*/
 
 .navbar .navbar-toggler {
-
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
 }
 
 .navbar .toggle-btn {
-
   cursor: pointer;
   position: relative;
   top: 5px;
@@ -111,7 +106,6 @@ body {
 }
 
 .navbar .toggle-btn .bar {
-
   width: 25px;
   height: 3px;
   margin: 7px 0 7px auto;
@@ -121,17 +115,14 @@ body {
 }
 
 .navbar .toggle-btn .bar:nth-child(2) {
-
   width: 35px;
 }
 
 .navbar #toggle-menu {
-
   display: none;
 }
 
 .navbar #toggle-menu:checked+label.toggle-btn .bar:nth-child(2) {
-
   -webkit-transform: translateX(50px);
   -ms-transform: translateX(50px);
   transform: translateX(50px);
@@ -139,74 +130,62 @@ body {
 }
 
 .navbar #toggle-menu:checked+label.toggle-btn .bar:nth-child(1) {
-
   -webkit-transform: translateY(12px) rotate(45deg);
   -ms-transform: translateY(12px) rotate(45deg);
   transform: translateY(12px) rotate(45deg);
 }
 
 .navbar #toggle-menu:checked+label.toggle-btn .bar:nth-child(3) {
-
   -webkit-transform: translateY(-8px) rotate(-45deg);
   -ms-transform: translateY(-8px) rotate(-45deg);
   transform: translateY(-8px) rotate(-45deg);
 }
 
 .modal-dialog {
-
   margin-left: -3px;
   margin-top: -3px;
   width: 85%;
 }
 
 .modal-dialog .modal-content {
-
   background-color: #2a252e;
 }
 
 .modal-dialog .modal-header,
 .modal-dialog .modal-footer {
-
   border: none;
 }
 
 .modal-dialog .modal-header img {
-
   max-height: 40px;
 }
 
 .modal-dialog .modal-body {
-
   padding-top: 65px;
   background-color: rgb(3, 17, 38);
 }
 
 .modal-dialog .nav-link {
-
   font-size: 18px;
   margin-bottom: 30px;
   color: white;
 }
 
 .modal-dialog .nav-link i {
-
   margin-right: 10px;
   color: lightseagreen;
 }
 
 .dropdown-menu {
-
   background-color: #2a252e;
   color: lightseagreen;
 }
 
 .dropdown-item {
-
   color: white;
 }
 
 .modal-dialog .btn-secondary {
-
   color: white;
   background-color: lightseagreen;
   border: none;
