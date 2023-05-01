@@ -124,6 +124,15 @@ body {
     margin-top: 9em;
 }
 
+.heading {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
 .service_box{
     color: #fff;
     font-family: 'lato', sans-serif;
