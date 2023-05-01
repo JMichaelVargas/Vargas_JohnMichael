@@ -78,11 +78,20 @@ body {
 }
 
 .navbar .toggle-btn {
-
   cursor: pointer;
   position: relative;
   top: 5px;
   z-index: 1100;
+}
+
+.scroll-indicator-container{
+  width: 100%;
+  height: 5px;
+}
+.scroll-indicator-bar{
+  background: lightseagreen;
+  width: 50%;
+  height: 100%;
 }
 
 /*Responsive Mobile View Button for Navbar*/

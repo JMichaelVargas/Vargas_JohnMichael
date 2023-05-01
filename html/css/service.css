@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  background: url(rainbow-vortex.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background: #030214;
+  padding: 1rem 1rem;
+  height: 0rem;
+  min-height: 9vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  position: sticky;
+  box-sizing: border-box;
+}
+
+.navbar .navbar-brand a {
+  padding: 1rem 0;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar-brand i {
+  color: lightseagreen;
+  margin-right: 3px;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: lightseagreen;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+.navbar-nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 20px;
+  transition: 0.3s ease, color 0.3s ease;
+  font-size: 15px;
+}
+
+.navbar-nav li a:hover {
+  background-color: #fff;
+  color: lightseagreen;
+}
+
+.navbar-collapse {
+  background: #030214;
+  font-size: 1.2rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: lightseagreen;
+  cursor: pointer;
+
+}
+
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: transparent;
+  border-color: lightseagreen;
+  border-radius: 25px;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: lightseagreen;
+  color: #fff;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Service Section */
+
+.service-section{
+    margin-top: 9em;
+}
+
+.service_box{
+    color: #fff;
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    padding: 25px 5px 30px 0;
+    box-shadow: 15px 0 15px -15px rgba(0, 0, 0, 0.5) inset;
+    position: relative;
+}
+
+.service_box:after{
+    content: '';
+    background: darkblue;
+    width: 20px;
+    height: 20px;
+    box-shadow: 20px 0 20px -20px rgba(0, 0, 0, 0.5) inset;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.service_box .service_content{
+    padding: 15px;
+    background: linear-gradient(to left bottom, black, darkblue);
+    border-radius: 0 30px 30px 0;
+    box-shadow: 20px 0 20px -20px rgba(0, 0, 0, 0.5) inset;
+}
+
+.service_box .title{
+    color: darkblue;
+    background: #030214;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    margin: 0 -20px 20px -15px;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.5) inset, 5px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.service_box .description{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 20px;
+}
+
+.service_box .service-icon{
+    color: white;
+    font-size: 45px;
+}
+
+.service_box:hover .service-icon i{
+    transform: rotate(360deg);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.service_box.blue::after{
+    background: #6558ff;
+}
+
+.service_box.blue .service_content{
+    background: linear-gradient(to left bottom, black, #6558ff);
+}
+
+.service_box.blue .title{
+    color: #6558ff;
+}
+
+.service_box.purple::after{
+    background: #910090;
+}
+
+.service_box.purple .service_content{
+    background: linear-gradient(to left bottom, black, #910090);
+}
+
+.service_box.purple .title{
+    color: #910090;
+}
+
+.service_box.green::after{
+    background: #00ae85;
+}
+
+.service_box.green .service_content{
+    background: linear-gradient(to left bottom, black, #00ae85);
+}
+
+.service_box.green .title{
+    color: #00ae85;
+}
+
+@media only screen and (max-width: 990px){
+    .service-box{
+        margin: 0 0 30px;
+    }
+}
