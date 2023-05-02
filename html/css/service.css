@@ -121,7 +121,8 @@ body {
 /* Service Section */
 
 .service-section{
-    margin-top: 9em;
+    margin-top: 8em;
+    margin-bottom: 8em;
 }
 
 .heading {
@@ -129,7 +130,7 @@ body {
   font-size: 60px;
   color: white;
   text-transform: capitalize;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 50px;
 }
 
@@ -226,6 +227,7 @@ body {
     color: #00ae85;
 }
 
+/* RESPONSIVE SECTION */
 @media only screen and (max-width: 990px){
     .service-box{
         margin: 0 0 30px;

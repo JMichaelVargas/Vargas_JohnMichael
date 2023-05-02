@@ -255,7 +255,6 @@ body {
 .future {
   color: white;
   font-size: 25px;
-  font-family: var(--roboto);
   text-align: center;
 }
 
@@ -338,7 +337,6 @@ body {
    font-size: 1,5rem;
    margin-bottom: 1.8rem;
    color: #fff;
-   font-family: 'Pacifico', cursive;
 }
 
 .boxes .container .content .box p{
