@@ -233,3 +233,9 @@ body {
         margin: 0 0 30px;
     }
 }
+
+@media(max-width: 767px){
+  .heading{
+    font-size: 40px;
+  }
+}
