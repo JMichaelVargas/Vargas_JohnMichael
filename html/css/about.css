@@ -119,6 +119,10 @@ body {
 
 /*About Section*/
 
+.about-section{
+  min-height: 100vh;
+}
+
 .title {
   text-align: center;
   font-size: 50ppx;
