@@ -48,3 +48,49 @@ tabsContainer.addEventListener("click", (e) =>{
     aboutSection.querySelector(target).classList.add("active");
   }
 });
+
+// Email JS
+function validate() {
+  let name1 = document.querySelector(".name1");
+  let email = document.querySelector(".email");
+  let msg = document.querySelector(".message");
+  let sendBtn = document.querySelector(".send-btn");
+
+  sendBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (name1.value === "" || email.value === "" || msg.value === "") {
+      emptyerror();
+    } else {
+      sendmail(name1.value, email.value, msg.value);
+      success();
+    }
+  });
+}
+
+function sendmail(name1, email, msg) {
+  emailjs.send("service_7dhdhbt", "template_gceucwk", {
+    to_name: name1,
+    from_name: email,
+    message: msg,
+  }).then((response) => {
+    console.log("SUCCESS!", response.status, response.text);
+  }, (error) => {
+    console.log("FAILED...", error);
+  });
+}
+
+function emptyerror() {
+  swal({
+    title: "Oh No...",
+    text: "Fields Cannot Be Empty",
+    icon: "error",
+  });
+}
+
+function success() {
+  swal({
+    title: "Email Sent Successfully",
+    text: "We will try to reply within 24hrs",
+    icon: "success",
+  });
+}

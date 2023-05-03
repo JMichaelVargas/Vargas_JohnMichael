@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  background: url(rainbow-vortex.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background: #030214;
+  padding: 1rem 1rem;
+  height: 0rem;
+  min-height: 9vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  position: sticky; 
+  box-sizing: border-box;
+}
+
+.navbar .navbar-brand a {
+  padding: 1rem 0;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar-brand i {
+  color: lightseagreen;
+  margin-right: 3px;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: lightseagreen;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+.navbar-nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 20px;
+  transition: 0.3s ease, color 0.3s ease;
+  font-size: 15px;
+}
+
+.navbar-nav li a:hover {
+  background-color: #fff;
+  color: lightseagreen;
+}
+
+.navbar-collapse {
+  background: #030214;
+  font-size: 1.2rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: lightseagreen;
+  cursor: pointer;
+}
+
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: transparent;
+  border-color: lightseagreen;
+  border-radius: 25px;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: lightseagreen;
+  color: #fff;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Contact Section */
+.contact-section{
+  min-height: auto;
+  padding-bottom: 7rem;
+}
+
+.contact-section form{
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section form .input-box{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-section form .input-box .input-field{
+  position: relative;
+  width: 49%;
+  margin: .8rem 0;
+}
+
+.contact-section form .input-box .input-field input,
+.contact-section form .textarea-field textarea{
+  width: 100%;
+  height: 100%;
+  padding: 1.3rem;
+  font-size: .8rem;
+  color: lightseagreen;
+  background: transparent;
+  border-radius: .4rem;
+  border: .1rem solid lightseagreen;
+}
+
+.contact-section form .input-box .input-field input::placeholder,
+.contact-section form .textarea-field textarea::placeholder{
+  color: white;
+}
+
+.contact-section form .focus{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to left bottom, #112e42, #030214);
+  border-radius: .6rem;
+  z-index: -1;
+  transition: .5s;
+}
+
+.contact-section form .input-box .input-field input:focus~.focus,
+.contact-section form .input-box .input-field input:valid~.focus,
+.contact-section form .textarea-field textarea:focus~.focus,
+.contact-section form .textarea-field textarea:valid~.focus{
+  width: 100%;
+}
+
+.contact-section form .textarea-field {
+  position: relative;
+  margin: .8rem 0 2.7rem;
+  display: flex;
+}
+
+.contact-section form .textarea-field textarea{
+  resize: none;
+}
+
+.contact-section .send-btn{
+  width: 120px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 12px;
+  cursor: pointer;
+  background: transparent;
+  border: .1rem solid lightseagreen;
+  color: white;
+  border-radius: 50px;
+}
+
+.contact-section .send-btn:hover{
+  background: lightseagreen;
+  transition: 0.3s all linear;
+}
+
+/* Responsive Section */
+@media (max-width: 767px) {
+  .contact-section form .input-box .input-field {
+    width: 100%;
+  }
+  
+  .contact-section form .textarea-field {
+    margin: .8rem 0 1.7rem;
+  }
+}

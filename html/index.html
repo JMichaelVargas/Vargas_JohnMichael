@@ -143,7 +143,7 @@
                     <div class="box">
                         <i class="fas fa-gem"></i>
                         <h3>Strong Dedication</h3>
-                        <p>As an IT student, I am deeply passionate about technology and fully dedicated to advancing my knowledge and skills. Through persistent research and study, I aim to stay at the forefront of the dynamic IT industry and make a meaningful contribution to the field.</p>
+                        <p>"As an IT student, I am deeply passionate about technology and fully dedicated to advancing my knowledge and skills. Through persistent research and study, I aim to stay at the forefront of the dynamic IT industry and make a meaningful contribution to the field".</p>
                     </div>
                 </div>
             </div>
@@ -157,13 +157,28 @@
     <!--Service Section-->
     <section id="service-section" class="hidden"> </section>
 
+    <!--Contact Section-->
+    <section id="contact-section" class="hidden"> </section>
+
 
     <!--JavaScript Section-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-    <script src="js\main.js"></script>
+    <!-- sweet js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- email js -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("iQIrxLJ4ALv4m75oA");
+    })();
+    </script>
+
+    <script type="text/javascript" src="js\main.js"></script>
     <!-- Call loadSection function to load content -->
     <script>
     // Load the content of about.html into the About Section
@@ -171,8 +186,10 @@
 
     // Load the content of service.html into the Service Section
     loadSection('service-section', 'service.html');
+
+    // Load the content of service.html into the Service Section
+    loadSection('contact-section', 'contact.html');
     </script>
     </section>
 </body>
-
 </html>
