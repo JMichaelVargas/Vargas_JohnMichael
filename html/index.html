@@ -30,7 +30,7 @@
             <!-- container -->
             <div class="container-fluid px-0">
                 <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-graduation-cap"></i>JMV</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="navbar-toggler">
                     <input type='checkbox' id='toggle-menu' />
                     <label type="button" class='toggle-btn' for='toggle-menu'>
                         <div class="bar"></div>
@@ -71,19 +71,19 @@
                         <!-- ms-auto -->
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#home" data-after="Home"><i class="fas fa-home"></i> HOME</a>
+                                <a class="nav-link menu-link" href="#home"><i class="fas fa-home"></i> HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about" data-after="about"><i class="fa-solid fa-user"></i></i> ABOUT</a>
+                                <a class="nav-link menu-link" href="#about"><i class="fa-solid fa-user"></i></i> ABOUT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#service" data-after="service"><i class="fa-solid fa-user-tag"></i> SERVICES</a>
+                                <a class="nav-link menu-link" href="#service"><i class="fa-solid fa-user-tag"></i> SERVICES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact" data-after="contact"><i class="fa-solid fa-user-tag"></i> CONTACT</a>
+                                <a class="nav-link menu-link" href="#contact"><i class="fa-solid fa-user-tag"></i> CONTACT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href=""><i class="fa-solid fa-user-plus"></i> SIGN UP</a>
+                                <a class="nav-link menu-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> SIGN UP</a>
                             </li>
                     </div>
                     <div class="modal-footer">
@@ -93,6 +93,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Home section-->
         <div class="row slider" id="home">
             <div class="col-10 mx-auto">
@@ -124,6 +125,7 @@
             </div>
         </div>  
 
+    <!-- Hidden Section JS  -->
     <section class="hidden">
         <section class="boxes">
             <div class="container">
@@ -160,16 +162,16 @@
     <!--Contact Section-->
     <section id="contact-section" class="hidden"> </section>
 
-    <!-- Footer -->
+    <!-- footer -->
     <div class="row footer">
     <a href="#home">Created by: <span>John Michael E. Vargas - BSIT2B</span></a>
     </div>
-    <!-- Footer -->
+    <!-- footer section ends -->
 
-    <!--JavaScript Section-->
+    <!--JavaScript Section-->   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
     <script src="js\main.js"></script>
+    
     <!-- Call loadSection function to load content -->
     <script>
     // Load the content of about.html into the About Section
