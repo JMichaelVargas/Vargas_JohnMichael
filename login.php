@@ -40,7 +40,7 @@
         require '_dbcon.php';
         $usernameemail = $_POST['usernameemail'];
         $password = $_POST['password']; // add isset() check here
-        $result = mysqli_query($connect, "SELECT * FROM vargas_db WHERE username = '$usernameemail' OR email = '$usernameemail'");
+        $result = mysqli_query($connect, "SELECT * FROM vargas_johnmichael WHERE username = '$usernameemail' OR email = '$usernameemail'");
         $row = mysqli_fetch_assoc($result);
 
         if (mysqli_num_rows($result) > 0) {
