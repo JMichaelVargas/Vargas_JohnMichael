@@ -48,3 +48,23 @@ tabsContainer.addEventListener("click", (e) =>{
     aboutSection.querySelector(target).classList.add("active");
   }
 });
+
+function togglePasswordVisibility() {
+  var passwordInput = document.getElementById("password");
+  var passInput = document.getElementById("cpassword");
+  var showPasswordButton = document.getElementById("showPasswordCheckbox");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    showPasswordButton.textContent = "Hide Password";
+  } else {
+    passwordInput.type = "password";
+    showPasswordButton.textContent = "Show Password";
+  }
+
+  if (passInput.type === "password") {
+    passInput.type = "text";
+  } else {
+    passInput.type = "password";
+  }
+}
